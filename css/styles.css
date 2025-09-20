@@ -1,0 +1,655 @@
+/* Definición de variables CSS para colores y fuentes */
+:root {
+  --fondo: #8e44ad;        /* morado principal */
+  --fondocuadros: #f5f5f5; /* neutro claro */
+  --primario: #f1c40f;     /* acento dorado */
+  --secundario: #3498db;   /* azul complementario */
+  --texto: #2c003e;        /* texto oscuro */
+  --textoclaro: #ffffff;   /* texto sobre fondos oscuros */
+  --fuente-principal: "Roboto", sans-serif;
+}
+/* adaptación en la etiqueta HTML y body para poder utilizar la medida "REM" con facilidad en el código = 1rem = 10px */
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+body {
+  font-size: 16px;
+  background: linear-gradient(135deg, #8e44ad, #2c003e);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: cover;
+
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--fuente-principal);
+}
+
+p{
+  font-size: 2rem;
+  line-height: 1.5;
+  padding: 0rem 2rem 2rem 2rem;
+  font-family: var(--fuente-principal);
+  color: var(--texto);
+}
+
+label{
+  font-size: 1.8rem;
+  font-family: var(--fuente-principal);
+  color: var(--texto);
+}
+
+h2{
+  font-size: 2.5rem;
+  font-family: var(--fuente-principal);
+  color: var(--texto);}
+a{text-decoration: none;}
+
+h3{
+  font-size: 2rem;
+  font-family: var(--fuente-principal);
+  color: var(--texto);
+}
+
+/** Estilos para el header y el titulo principal **/
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+  
+}
+
+@media(max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    width: unset;
+ 
+  }
+
+}
+
+header h1 {
+  padding: 1rem 1rem 1rem 1rem;
+  margin: 0 0;
+  display: inline;
+  align-items: center;
+  font-family: var(--fuente-principal);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  border-radius: 22px;
+  background-color: white;
+  justify-content: center;
+}
+
+.contenedor-logotipo {
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  flex-wrap: wrap;
+  gap:1rem;
+justify-content: center;
+}
+
+.cabecera-principal {
+  border-radius: 22px 22px 0px 0px;
+  justify-content: space-between;
+  width: unset;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0rem 1rem 0rem;
+
+} 
+
+/** Estilos para el titulo principal **/
+.titulo{
+  text-align: center;
+}
+
+.titulo span {
+  font-size: 1.6rem;
+  font-family: var(--fuente-principal);
+  padding-left: 6rem;
+  display: contents;
+}
+/** Estilos para el menu de navegacion **/
+nav a {
+  border-radius: 22px;
+  background-color: white;
+
+  text-align: center;
+}
+
+.contenedor-navegacion {
+  margin-right: 2rem;
+  display:flex;
+  justify-content: center;
+}
+
+.navegacion-menu {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.navegacion-menu a {
+  text-decoration: none;
+  color: var(--texto);
+  font-weight: bold;
+  font-size: 3rem;
+  width: 15rem;
+  font-family: var(--fuente-principal);
+  padding: 1rem 1rem;
+ 
+}
+
+.navegacion-menu a:hover {
+  font-weight: bolder;
+
+}
+
+
+.logotipo {
+  padding: 0;
+  max-width: 12rem;
+  height: auto;
+  display: block;
+}
+
+.presentacion-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centra verticalmente */
+  align-items: center; /* centra horizontalmente */
+  flex-wrap: wrap; /* permite que los elementos se envuelvan si no caben en una sola línea */
+  gap: 1rem; /* espacio entre cada fila*/
+  text-align: center;
+  height: 30rem;
+  position: relative;
+  font-family: var(--fuente-principal);
+  background-color: rgba(0, 0, 0, 0.4); /* Negro con 40% de opacidad */
+  background-image: url("images/imagen-fondo-banner.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/** para hacer que se vea el texto, tengo que usar el z-index con el fin de que se ponga por encima de ese efecto oscuro de imagen. **/
+.presentacion-banner > * {
+  position: relative;
+  z-index: 1;
+}
+.presentacion-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* Negro con 40% de opacidad */
+  z-index: 0;
+}
+
+.presentacion-banner h2 {
+  font-size: 3rem;
+  color: var(--textoclaro);
+  /** código para darle sombras al texto **/
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black,
+    -1px 1px 0 black;
+}
+
+.presentacion-banner p {
+  font-size: 1.8rem;
+  padding-top: 0rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  font-family: var(--fuente-principal);
+  color: var(--fondo);
+  border-radius: 22px black2px;
+}
+
+.div-botones-sociales {
+  display: flex;
+  gap: 1rem; /* separación entre botones */
+  flex-wrap: wrap; /* permite que los botones salten a otra fila en móviles */
+  justify-content: center;
+}
+
+.boton-social {
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  background-color: var(--primario);
+  color: black;
+  padding: 1rem 2rem;
+  border-radius: 22px;
+  font-size: 1.6rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Clase que define que es un contenedor centrado y con un ancho maximo */
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: var(--primario);
+  width: 90%;
+  border-radius: 0px 0px 22px 22px;
+  /*Centrar el contenedor del menu con los margenes , el primer valor es margenes de arriba y abajo, y el segundo de izquierda a derecha.  */
+  margin: 0 auto;
+}
+
+.contenedor{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: var(--primario);
+  width: 90%;
+  border-radius: 22px;
+  margin: 1rem auto;
+  /*Centrar el contenedor del menu con los margenes , el primer valor es margenes de arriba y abajo, y el segundo de izquierda a derecha.  */
+
+}
+
+.h3-texto-titulo-contenedor {
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem 2rem 0rem 2rem;
+  font-family: var(--fuente-principal);
+}
+
+.contenedor-campos-imagenes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contenedor-segmento {
+  background-color: var(--fondocuadros);
+  border-radius: 22px;
+  padding: 2rem;
+  margin: 2rem;
+  flex: 1 1 300px; /* Crece y se encoge según el espacio disponible, con un tamaño base de 300px */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  text-align: center;
+  height: 45rem;
+
+}
+
+.conteneedor-nombrecontacto {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.formulario-contacto {
+  background: var(--primario);
+  padding: 3rem 2rem;
+  width: 50rem;
+  border-radius: 20px;
+  margin: 4rem;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}
+
+.formulario-contacto h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.formulario-contacto h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--primario); /* dorado */
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.formulario-contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+}
+
+.campo label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--texto);
+}
+
+.campo input,
+.campo textarea {
+  padding: 0.9rem 1rem;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+  border-color: var(--fondo); /* morado */
+  box-shadow: 0 0 8px rgba(142, 68, 173, 0.3);
+}
+
+button[type="submit"] {
+  background: var(--fondo); /* morado */
+  color: var(--textoclaro);
+  border: none;
+  padding: 1rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: var(--primario); /* dorado */
+  color: var(--texto);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.contenedor-formulario{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color:rgb(59, 54, 54);
+  font-family: var(--fuente-principal);
+  color: var(--textoclaro);
+  border-radius: 0px 0px 22px 22px;
+  margin-top: 2rem;
+}
+
+.texto-footer {
+  color: var(--textoclaro);
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+/* -----------------------------
+   Móviles pequeños (<600px)
+------------------------------- */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .cabecera-principal {
+    padding: 1rem;
+  }
+
+  .logotipo {
+    max-width: 8rem;
+    padding: 0;
+  }
+
+  header h1 {
+    min-width: unset;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+  }
+
+  .titulo span {
+    display: block;
+    padding-left: 0;
+    font-size: 1.4rem;
+  }
+
+  .contenedor-navegacion {
+    margin-right: 0;
+  }
+
+  .contenedor-logotipo {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .navegacion-menu a {
+    min-width: 100%;
+    font-size: 2rem;
+  }
+
+  .presentacion-banner {
+    height: auto;
+    padding: 2rem 1rem;
+    background-position: center top;
+  }
+
+  .presentacion-banner h2 {
+    font-size: 2rem;
+  }
+
+  .div-botones-sociales {
+    color: var(--primario);
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .boton-social {
+    font-size: 1.4rem;
+    padding: 0.8rem 1.5rem;
+
+  }
+
+  .contenedor-campos-imagenes {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .contenedor-segmento {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+main{
+  margin: 0 0;
+}
+
+  .formulario-contacto {
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem 1rem;
+  }
+
+}
+
+/* -----------------------------
+   Tablets (<1024px)
+------------------------------- */
+@media (max-width: 1440px) {
+  header{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .navegacion-menu {
+    gap: 2rem;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .navegacion-menu a {
+    font-size: 2.5rem;
+    width: auto;
+  }
+
+  .presentacion-banner h2 {
+    font-size: 2.5rem;
+  }
+
+  .contenedor-segmento {
+    flex: 1 1 45%;
+  }
+}
+
+/* Efectos de transición para botones y enlaces */
+
+.expansible{
+ transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.expansible:hover {
+  transform: scale(1.2);
+}
+
+/* Animación de giro sutil solo al pasar el cursor */
+@keyframes girar-suave {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }    /* giro a la derecha */
+  50% { transform: rotate(0deg); }    /* vuelve al centro */
+  75% { transform: rotate(-5deg); }   /* giro a la izquierda */
+  100% { transform: rotate(0deg); }   /* vuelve al centro */
+}
+
+/* Inicia animación solo al pasar el cursor sobre el contenedor */
+.contenedor-segmento:hover svg {
+  display: inline-block;           
+  animation: girar-suave 0.5s ease-in-out;
+  transform-origin: center;        
+}
+
+/* Pop-up de notificación sobre el botón */
+.pop-up-copiado {
+  position: absolute;
+  background-color: var(--primario);
+  color: var(--texto);
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  font-size: 2rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  white-space: nowrap;
+  z-index: 100;
+  transform: translateY(-10px);
+  font-family: var(--fuente-principal);
+  font-style: bold;
+}
+
+.pop-up-copiado.mostrar {
+  opacity: 1;
+  transform: translateY(-40px); /* sube ligeramente al aparecer */
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+#filtros {
+  margin-bottom: 20px;
+}
+
+#filtros button {
+  margin: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.grid-proyectos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .grid-proyectos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.proyecto-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+  background: #f9f9f9;
+  transition: transform 0.2s ease;
+}
+
+.proyecto-card:hover {
+  transform: scale(1.05);
+}
+
+.proyecto-card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.tags {
+  margin: 10px 0;
+}
+
+.tag {
+  display: inline-block;
+  background: #0077cc;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-size: 0.8em;
+}
+
+.confidencial {
+  color: red;
+  font-weight: bold;
+}
+
+.barra-filtros-proyectos{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin:2rem 0;
+}
+
+.barra-filtros-proyectos button{
+  border-radius: 22px;
+  padding: 1rem;
+  min-width: 10rem;
+}
+
+.contenedor-proyectos{
+  margin:1;
+}

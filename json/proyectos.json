@@ -1,0 +1,59 @@
+[
+  {
+    "titulo": "Portfolio Web",
+    "descripcion": "Página personal con HTML, CSS y JS.",
+    "imagen": "img/portfolio.png",
+    "tecnologias": ["HTML", "CSS", "JavaScript"],
+    "github": "https://github.com/usuario/portfolio"
+  },
+  {
+    "titulo": "Web de gestión de citas para pequeños autónomos",
+    "descripcion": "Aplicación web que permite al autónomo crear citas de diferentes rangos y que los clientes puedan elegir las citas disponibles, o anularlas.",
+    "imagen": "img/todo.png",
+    "tecnologias": ["PHP", "HTML", "JavaScript","CSS"],
+    "github": null
+  },
+  {
+    "titulo": "App de Gestión de Tareas",
+    "descripcion": "Aplicación sencilla en React para gestionar tareas.",
+    "imagen": "img/todo.png",
+    "tecnologias": ["React", "API", "JavaScript"],
+    "github": null
+  },
+  {
+    "titulo": "App de Gestión de Tareas",
+    "descripcion": "Aplicación sencilla en React para gestionar tareas.",
+    "imagen": "img/todo.png",
+    "tecnologias": ["React", "API", "JavaScript"],
+    "github": null
+  },
+  {
+    "titulo": "App de Gestión de Tareas",
+    "descripcion": "Aplicación sencilla en React para gestionar tareas.",
+    "imagen": "img/todo.png",
+    "tecnologias": ["React", "API", "JavaScript"],
+    "github": null
+  },
+  {
+    "titulo": "App de Gestión de Tareas",
+    "descripcion": "Aplicación sencilla en React para gestionar tareas.",
+    "imagen": "img/todo.png",
+    "tecnologias": ["React", "API", "JavaScript"],
+    "github": null
+  },
+  {
+    "titulo": "App de Gestión de Tareas",
+    "descripcion": "Aplicación sencilla en React para gestionar tareas.",
+    "imagen": "img/todo.png",
+    "tecnologias": ["React", "API", "JavaScript"],
+    "github": null
+  },
+  {
+    "titulo": "App de Gestión de Tareas",
+    "descripcion": "Aplicación sencilla en React para gestionar tareas.",
+    "imagen": "img/todo.png",
+    "tecnologias": ["React", "API", "JavaScript"],
+    "github": null
+  }
+  
+]

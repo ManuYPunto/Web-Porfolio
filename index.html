@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Precargar hoja de estilos para agilizar la carga de la web -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preload" href="css/styles.css" as="style" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Manuel López Muñoz - Mi Web</title>
+  </head>
+
+
+  <body>
+    <header class="cabecera-principal">
+      <div class="contenedor-logotipo">
+      <img class="logotipo" src="css/images/Logo-Imagen.webp" />
+      <h1 class="titulo">
+        Manuel López Muñoz <br /><span>
+          Administrador de sistemas y Desarrollador web
+        </span>
+      </h1>
+      </div>
+      <div class="contenedor-navegacion">
+        <nav class="navegacion-menu">
+          <a href="index.html" class="expansible">Inicio</a>
+          <a href="proyectos/proyectos.html" class="expansible">Proyectos</a>
+          <a href="#sobre-mi" class="expansible">Sobre mí</a>
+          <a href="#contacto" class="expansible">Contacto</a>
+        </nav>
+      </div>
+    </header>
+    <section class="presentacion-banner">
+      <h2>
+        Bienvenido a mi web, ponte cómodo y disfruta de un café calentito.
+      </h2>
+      <div class="div-botones-sociales">
+      <a href="https://www.linkedin.com/in/manuel-l%C3%B3pez-mu%C3%B1oz-a3269798/"><div class="boton-social expansible" >
+          <!-- Imagen vectorial de Linkedin-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#000000"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
+            />
+            <path d="M8 11l0 5" />
+            <path d="M8 8l0 .01" />
+            <path d="M12 16l0 -5" />
+            <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+          </svg>
+          Linkedin
+        </div>
+        </a> 
+        <a href="https://github.com/ManuYPunto"><div class="boton-social expansible">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#000000"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+            />
+          </svg>
+          Github
+        </div>
+        </a>
+      <a href="#">  <div class="boton-social expansible" id="boton-correo">
+          <!-- Imagen vectorial del correo electrónico -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#000000"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"
+            />
+            <path d="M3 7l9 6l9 -6" />
+          </svg>
+          Correo electrónico
+        </div></a>
+       <a href="archivos/Curriculum - Manuel López muñoz.pdf" > <div class="boton-social expansible">
+          <!-- Imagen vectorial para currículum -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#000000"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+            <path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" />
+            <path d="M5 18h1.5a1.5 1.5 0 0 0 0 -3h-1.5v6" />
+            <path d="M17 18h2" />
+            <path d="M20 15h-3v6" />
+            <path d="M11 15v6h1a2 2 0 0 0 2 -2v-2a2 2 0 0 0 -2 -2h-1z" />
+          </svg>
+          Currículum Vitae
+        </div></a>
+      </div>
+    </section>
+    <main class="contenedor"">
+      <h3 class="h3-texto-titulo-contenedor">
+        Hola, soy Manuel López Muñoz. Trabajo como administrador de sistemas y desarrollador web, combinando mi pasión por la informática con un enfoque práctico y resolutivo. Me encanta aprender de manera constante y aplicar mis conocimientos en proyectos reales.
+En esta web encontrarás información sobre mi formación, algunos proyectos personales y profesionales, y un poco más sobre quién soy.”
+      </h3>
+      <div class="contenedor-campos-imagenes">
+        <section class="contenedor-segmento informacion">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#000000"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6" />
+            <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4" />
+          </svg>
+          <h3>Mi formación</h3>
+          <p>
+            Cuento con una sólida base académica en el ámbito tecnológico: <br/><br/>
+
+ - Técnico Superior en Desarrollo de Aplicaciones Web (DAW):<br/>
+  donde aprendí a crear aplicaciones modernas y funcionales.<br/><br>
+
+Grado Medio en Sistemas Microinformáticos y Redes <br/> donde aprendí conocimientos para administración de sistemas, mantenimiento de redes, hardware... ¡Un todoterreno hecho persona!
+          </p>
+        </section>
+
+        <section class="contenedor-segmento informacion">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#000000"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M19.875 6.27a2.225 2.225 0 0 1 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z"
+            />
+            <path
+              d="M15.5 9.422c.312 .18 .503 .515 .5 .876v3.277c0 .364 -.197 .7 -.515 .877l-3 1.922a1 1 0 0 1 -.97 0l-3 -1.922a1 1 0 0 1 -.515 -.876v-3.278c0 -.364 .197 -.7 .514 -.877l3 -1.79c.311 -.174 .69 -.174 1 0l3 1.79h-.014z"
+            />
+          </svg>
+          <h3>Mis Proyectos</h3>
+          <p>
+            Entre mis proyectos se encuentra esta web personal, <br/><br/> desarrollada con HTML, CSS y buenas prácticas de diseño, con la finalidad de ampliar mi portfolio con proyectos en tecnologías como React, Node.js y Microsoft 365, siempre con la idea de crear soluciones útiles y bien estructuradas. <br/> En un futuro no muy lejano... , disponible en esta web
+          </p>
+        </section>
+
+        <section class="contenedor-segmento informacion">
+          <svg
+          class="animacion-giro"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#000000"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+          </svg>
+          <h3>Sobre mí</h3>
+          <p>
+           Soy una persona curiosa, me gusta entrar en estado de flow cuando algo me entretiene y me gusta a partes iguales. <br/> Me gusta el sector de la informática y me siento cómodo entre líneas de código y administrando sistemas,
+           pero fuera de este ámbito, también soy una persona que le gusta mirar el vaso medio lleno, dentro de mis hobbies he aprendido a llevar algunas herramientas de edición de imagenes o video , y por qué no, montar algun servidor para jugar con mis amigos.<br/>
+            
+
+          </p>
+        </section>
+      </div>
+    </main>
+    <section class="contenedor">
+      <div class="contenedor-formulario">
+      <div class="texto-contacto">
+        <h3 class="h3-texto-titulo-contenedor">¿Quieres ponerte en contacto conmigo?</h3>
+        <p>
+   
+Puedes escribirme directamente al correo malomu95@gmail.com
+ o usar el formulario de esta página.
+Estaré encantado de escuchar tus propuestas, sugerencias o simplemente charlar sobre tecnología. ¡Gracias por tu visita!
+        </p>
+        </div>
+    <div class="formulario-contacto">
+    <h2>Buzón de contacto</h2>
+      <form>
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="campo">
+          <label for="email">Correo</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="campo">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+    </div>
+</section>
+    <footer>
+      <p class="texto-footer">
+        Un proyecto realizado por
+        <a href="www.manuellopezmunoz.es">Manuel López Muñoz</a>
+      </p>
+    </footer>
+      <script src="js/script.js"></script>
+  </body>
+</html>
