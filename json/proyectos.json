@@ -1,12 +1,5 @@
 [
   {
-    "titulo": "Portfolio Web",
-    "descripcion": "Página personal con HTML, CSS y JS.",
-    "imagen": "img/portfolio.png",
-    "tecnologias": ["HTML", "CSS", "JavaScript"],
-    "github": "https://github.com/usuario/portfolio"
-  },
-  {
     "titulo": "Web de gestión de citas para pequeños autónomos",
     "descripcion": "Aplicación web que permite al autónomo crear citas de diferentes rangos y que los clientes puedan elegir las citas disponibles, o anularlas.",
     "imagen": "img/todo.png",
@@ -14,46 +7,19 @@
     "github": null
   },
   {
-    "titulo": "App de Gestión de Tareas",
-    "descripcion": "Aplicación sencilla en React para gestionar tareas.",
+    "titulo": "Proyecto Empresarial grado medio",
+    "descripcion": "Diseñé junto a un equipo una empresa física de venta de juegos de mesa junto con dos comunidades de los mismos, creando desde cero contabilidad, montaje de servidores y mantenimiento de los mismos.",
     "imagen": "img/todo.png",
-    "tecnologias": ["React", "API", "JavaScript"],
-    "github": null
+    "tecnologias": ["Prestashop", "Wordpress", "Windows Server", "Apache", "Arquitectura de Redes" , "SAMBA"],
+    "github": "https://github.com/ManuYPunto/ProyectoCoinplay"
   },
   {
-    "titulo": "App de Gestión de Tareas",
-    "descripcion": "Aplicación sencilla en React para gestionar tareas.",
+    "titulo": "Web Portfolio",
+    "descripcion": "He trabajado de forma autodidacta en la web que estás visitando, te adjunto su código por si quieres analizarlo.",
     "imagen": "img/todo.png",
     "tecnologias": ["React", "API", "JavaScript"],
-    "github": null
-  },
-  {
-    "titulo": "App de Gestión de Tareas",
-    "descripcion": "Aplicación sencilla en React para gestionar tareas.",
-    "imagen": "img/todo.png",
-    "tecnologias": ["React", "API", "JavaScript"],
-    "github": null
-  },
-  {
-    "titulo": "App de Gestión de Tareas",
-    "descripcion": "Aplicación sencilla en React para gestionar tareas.",
-    "imagen": "img/todo.png",
-    "tecnologias": ["React", "API", "JavaScript"],
-    "github": null
-  },
-  {
-    "titulo": "App de Gestión de Tareas",
-    "descripcion": "Aplicación sencilla en React para gestionar tareas.",
-    "imagen": "img/todo.png",
-    "tecnologias": ["React", "API", "JavaScript"],
-    "github": null
-  },
-  {
-    "titulo": "App de Gestión de Tareas",
-    "descripcion": "Aplicación sencilla en React para gestionar tareas.",
-    "imagen": "img/todo.png",
-    "tecnologias": ["React", "API", "JavaScript"],
-    "github": null
+    "github": "https://github.com/ManuYPunto/Web-Porfolio"
   }
+  
   
 ]

@@ -39,7 +39,6 @@ function renderProyectos(filtro = null) {
     const card = document.createElement("div"); 
     card.className = "proyecto-card";
     card.innerHTML = `
-      <img src="${proyecto.imagen}" alt="${proyecto.titulo}">
       <h3>${proyecto.titulo}</h3>
       <p>${proyecto.descripcion}</p>
       <div class="tags">
