@@ -287,7 +287,7 @@ nav a {
   align-items: center;
   text-align: center;
   height: 45rem;
-
+  flex-wrap: wrap;
 }
 
 .conteneedor-nombrecontacto {
@@ -651,5 +651,6 @@ body {
 }
 
 .contenedor-proyectos{
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin:1rem;
 }

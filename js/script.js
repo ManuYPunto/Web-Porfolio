@@ -70,7 +70,7 @@ function renderFiltros() {
 }
 
 // Cargar proyectos
-fetch("../json/proyectos.json")
+fetch("/json/proyectos.json")
   .then(res => res.json())
   .then(data => {
     proyectosData = data;
